@@ -1,0 +1,68 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  position: absolute;
+  padding: 0.5rem;
+  inset: 0;
+}
+
+ol.wine-list {
+  flex: 1;
+  overflow: auto;
+  margin: 0 -0.5rem -0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 2.5rem;
+}
+
+ol.wine-list li.top-higher {
+  color: green;
+}
+
+ol.wine-list li.top-lower {
+  color: red;
+}
+
+ol.wine-list li.top-higher {
+  color: green;
+}
+
+ol.wine-list li.top-lower {
+  color: red;
+}
+
+.filters {
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 0.25rem;
+}
+
+button {
+  border: 1px solid rgb(118, 118, 118);
+}
+
+button:first-of-type {
+  border-radius: 0.125rem 0 0 0.125rem;
+  border-right: 0;
+}
+
+button:last-of-type {
+  border-radius: 0 0.125rem 0.125rem 0;
+  border-left: 0;
+}
+
+button.active {
+  background-color: lightblue;
+}
+
+button.link {
+  background-color: transparent;
+  border: none;
+  color: blue;
+  cursor: pointer;
+  text-decoration: underline;
+  padding: 0;
+}
